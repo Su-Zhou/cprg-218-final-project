@@ -77,23 +77,24 @@ h1, h2, h3, p, button, li, a{
 /* end of nav bar section */
 
 /* about us header section */
-.about-section-header {
-  padding: 100px;
+.centre-text {
+  background:#fbcccc;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; 
   text-align: center; 
-  background: #fbcccc;
+  padding: 80px;
 }
 
 @media screen and (max-width: 768px) {
-  .about-section-header {
+  .centre-text {
     grid-template-columns: 1fr; 
     flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    padding: 50px;
+        align-items: center; 
+        text-align: center; 
+        padding: 100px;
   }
 }
 /* end of section header */
