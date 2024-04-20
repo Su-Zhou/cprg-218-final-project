@@ -29,6 +29,7 @@
     <h1>Contact us Here</h1>
     <p>Either visit our cute little store or leave us a message here and we will get back to you!<p>
   </div>
+  
 
   <div class="contact-container">
   <div class="contact-row">
@@ -36,23 +37,52 @@
         <img src="../assets/store_front_image.jpg" alt="asfkJASKFJASKFJK" style="width:80%">
     </div>
     <div class="contact-column">
-        <form action="/action_page.php">
             <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
+        <button class="submit-button">Submit</button>
     </div>
   </div>
+  </div>
+
+
+  <section class="footer-container">
+    <footer class="footer">
+      <div class="footer-column">
+          <h3>Contact Information</h3>
+          <p>123 Imaginary SAIT Street,<br>Calgary, Canada</p>
+          <p>Email: akari_stationery@email.com<br>Phone: +123456789</p>
+      </div>
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+              <li><a href="#">Home <span class="material-symbols-outlined">
+                chevron_right
+                </span></a></li>
+              <li><a href="about/index.html">About Us <span class="material-symbols-outlined">
+                chevron_right
+                </span></a></li>
+              <li><a href="shop/index.html">Our Store<span class="material-symbols-outlined">
+                chevron_right
+                </span></a></li>
+              <li><a href="contact/index.html">Contact Us <span class="material-symbols-outlined">
+                chevron_right
+                </span></a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Location</h3>
+          <div class="iframe-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6381.328166540631!2d-114.09423312488117!3d51.0645004579289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f927202bf3f%3A0x16877e49fcc8dbcb!2sStan%20Grad%20Centre!5e0!3m2!1sen!2sca!4v1709871450654!5m2!1sen!2sca" title="Google Map of Store Location" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+      <div class="copyright">
+          <p id="elementFooter">&#169; <span id="year"> 2021</span> akari stationery shop. All rights reserved</p>  <!-- date is changed to 2021 to see if the js code works to name the date dynamically -->
+      </div>
+  </footer>
   </section>
 
 </body>

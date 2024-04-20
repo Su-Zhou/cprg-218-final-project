@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Junge&family=Lancelot&display=swap');
 
-.h1, h2, h3, p, button, li, a{
+h1, h2, h3, p, button, li, a{
     font-family: 'Besley','Times New Roman', Times, serif, Verdana, Helvetica;
 }
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Junge&family=Lancelot&display=swap');
 
-.h1, h2, h3, p, button, li, a{
+h1, h2, h3, p, button, li, a{
     font-family: 'Besley','Times New Roman', Times, serif, Verdana, Helvetica;
 }
 
@@ -105,7 +105,17 @@
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 50px;;
+}
+
+textarea {
+  border-radius: 30px;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -114,21 +124,23 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+.submit-button {
+  background-color:#fbcccc;
+  color:#403d58;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  border-radius: 50px;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+.submit-button:hover {
+  background-color: #f98c8c;
+  color: white;
 }
 
 .contact-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 50px;
 }
 
@@ -145,14 +157,75 @@ input[type=submit]:hover {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .contact-column, input[type=submit] {
+@media screen and (max-width: 950px) {
+  .contact-column, button {
     width: 100%;
     margin-top: 0;
+    justify-content: center;
   }
 
   img {
     justify-content: center;
     text-align: center;
+    display: flex;
+    margin: 0 auto;
+}
+}
+
+/*start of footer*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color:#f3e2e2;
+  color: black;
+  padding: 20px;
+}
+
+/* Style for the link list */
+.link-list {
+  list-style-type: none;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+}
+
+.link-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-list a:hover .link-list a:visited {
+    text-decoration: none;
+  }
+ul.quick-links {
+  padding: 0%;
+}
+
+/* Google Maps iframe styling */
+.google-maps {
+  text-align: right;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; 
+  margin-bottom: 20px; 
+}
+
+/* Responsive iframe */
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
   }
 }
