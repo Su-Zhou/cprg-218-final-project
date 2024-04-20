@@ -240,9 +240,8 @@ h1, h2, h3, p, button, li, a{
 .card-photos {
   border-bottom: 2rem solid #f3bebe;
   border-radius: 0.5rem 0.5rem 0 0;
-  height: 50%;
+  height: auto;
   width: 100%;
-  object-fit: cover; 
 }
 
 ul {
