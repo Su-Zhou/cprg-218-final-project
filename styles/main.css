@@ -303,7 +303,7 @@ font-size:small;
     margin-bottom: 20px;
 }
 
-.card-button:hover {
+button:hover {
         background-color:#f3bebe;
         color:black;
         transition: ease-in 0.2s;

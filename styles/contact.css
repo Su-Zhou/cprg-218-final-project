@@ -90,6 +90,9 @@ h1, h2, h3, p, button, li, a{
   background: #fbcccc;
 }
 
+h2 {
+  padding-bottom: 50px;
+}
 @media screen and (max-width: 768px) {
   .contact-section-header {
     grid-template-columns: 1fr; 
