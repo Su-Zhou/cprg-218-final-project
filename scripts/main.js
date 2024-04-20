@@ -16,3 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         x.classList.remove("responsive"); 
     }
 };
+
+const navigateToShop = () => {
+  window.location.href = 'shop/index.html';
+};
