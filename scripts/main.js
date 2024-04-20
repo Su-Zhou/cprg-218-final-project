@@ -1,4 +1,4 @@
-console.log('Hello, World!');
+console.log('Thank you for teaching me these two semesters! I have learned a lot that I never thought I would in terms of coding');
 
 //dynamic date
 document.addEventListener("DOMContentLoaded", () => {
