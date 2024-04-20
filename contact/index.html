@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles/contact.css">
+  <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../scripts/main.js"></script>
+  <title>Akari Stationery Store</title>
+  </head>
+
+<body>
+  <div class="navbar" id="myNavbar"> <!--Navbar-->
+    <a href="../index.html">Home</a>
+    <a href="../about/index.html">About</a>
+    <a href="../contact/index.html">Contact</a>
+    <a href="../shop/index.html">Shop</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+
+
+  <div class="contact-section-header">
+    <h1>Contact us Here</h1>
+    <p>Either visit our cute little store or leave us a message here and we will get back to you!<p>
+  </div>
+
+  <div class="contact-container">
+  <div class="contact-row">
+    <div class="contact-column">
+        <img src="../assets/store_front_image.jpg" alt="asfkJASKFJASKFJK" style="width:80%">
+    </div>
+    <div class="contact-column">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  </section>
+
+</body>
+</html>

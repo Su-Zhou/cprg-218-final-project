@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Junge&family=Lancelot&display=swap');
+
+.h1, h2, h3, p, button, li, a{
+    font-family: 'Besley','Times New Roman', Times, serif, Verdana, Helvetica;
+}
+
+/*text selection easter egg*/
+::selection {
+    color:hsl(0, 100%, 70%);
+}
+
+/*sections */
+.container {
+    margin: 2rem auto;
+    max-width: 75rem;
+    padding: 2rem 1.5rem;
+    position: relative;
+  }
+  .header-container {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 6rem 1rem;
+  }
+/*sections end*/
+
+/* nav bar */
+.navbar {
+    overflow: hidden;
+    background-color:#fbcccc;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+    padding: 5px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color:#403d58;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ffffff;
+    color: black;
+    transition: ease-in 0.15s;
+    border-radius: 30px;
+  }
+    .navbar .icon {
+        display: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: fixed;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/* end of nav bar section */
+
+
+/* contact section */
+/* about us header section */
+.contact-section-header {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  text-align: center; 
+  background: #fbcccc;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section-header {
+    grid-template-columns: 1fr; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 100px;
+  }
+}
+/* end of section header */
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.contact-column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.contact-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  img {
+    justify-content: center;
+    text-align: center;
+  }
+}
