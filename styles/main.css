@@ -6,7 +6,8 @@
 
 /*text selection easter egg*/
 ::selection {
-    color:hsl(0, 100%, 70%);
+  background-color:#142f4a;
+  color: white;
 }
 
 /*sections */
@@ -26,12 +27,11 @@
 /* nav bar */
 .navbar {
     overflow: hidden;
-    background-color:#fbcccc;
+    background-color:#d4e3f4;
     position: fixed; 
     top: 0; 
     width: 100%;
     z-index: 1000;
-    padding: 5px;
   }
   
   /* Links inside the navbar */
@@ -46,8 +46,8 @@
   
   /* Change background on mouse-over */
   .navbar a:hover {
-    background: #ffffff;
-    color: black;
+    background: #abc8e9;
+    color: rgb(0, 0, 0);
     transition: ease-in 0.15s;
     border-radius: 30px;
   }
@@ -89,7 +89,7 @@ font-size:small;
 }
 
 .hero-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero_image_stationary.jpg");
+    background-image: url("../assets/stellis_hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +133,7 @@ font-size:small;
   }
   
   .hero-text button:hover {
-    background-color: #f3bebe;
+    background-color:#abc8e9;
     color: black;
     transition: ease-in 0.2s;
   }
@@ -155,7 +155,7 @@ font-size:small;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px 30px;
     margin-bottom:50px;
-    border-bottom: 2px  solid #f3bebe;
+    border-bottom: 2px  solid #142f4a;
     padding-bottom: 20px; 
 }
     
@@ -261,9 +261,9 @@ font-size:small;
 .card {
     background-color: #fff;
     border-radius: 0.25rem;
-    box-shadow: 0rem 0.125rem 1.5rem rgba(230, 123, 123, 0.12);
+    box-shadow: 0rem 0.125rem 1.5rem rgba(123, 128, 230, 0.12);
     width: 100%; 
-    border: 2rem #403d58;
+    border: 2rem #8c81e1;
   }
 
  .card-container  {
@@ -295,7 +295,7 @@ font-size:small;
     outline: 0;
     padding: 10px 25px;
     color: black;
-    background-color:#f3e2e2;
+    background-color:#d4e3f4;
     cursor: pointer;
     display: block;
     max-width: 300px;
@@ -304,13 +304,13 @@ font-size:small;
 }
 
 button:hover {
-        background-color:#f3bebe;
+        background-color:#abc8e9;
         color:black;
         transition: ease-in 0.2s;
       }
 
   .card-photos {
-    border-bottom: 2rem solid #f3bebe;
+    border-bottom: 2rem solid #142f4a;
     border-radius: 0.5rem 0.5rem 0 0;
     height: auto;
     width: 100%;
@@ -361,7 +361,7 @@ ul {
     font-size: 30px;
 }
 .accordion {
-    background-color:#f3e2e2;
+    background-color:#d4e3f4;
     color:black;
     cursor: pointer;
     padding: 18px;
@@ -375,7 +375,7 @@ ul {
   }
   
   .active, .accordion:hover {
-    background-color:#fbb5b5;
+    background-color:#abc8e9;
   }
   
   .panel {
@@ -403,7 +403,7 @@ ul {
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color:#f3e2e2;
+    background-color:#d4e3f4;
     color: black;
     padding: 20px;
   }

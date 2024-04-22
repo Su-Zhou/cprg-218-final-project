@@ -6,7 +6,8 @@ h1, h2, h3, p, button, li, a{
 
 /*text selection easter egg*/
 ::selection {
-    color:hsl(0, 100%, 70%);
+    background-color:#142f4a;
+    color: white;
 }
 
 /*sections */
@@ -25,12 +26,11 @@ h1, h2, h3, p, button, li, a{
 /* nav bar */
 .navbar {
     overflow: hidden;
-    background-color:#fbcccc;
+    background-color:#d4e3f4;
     position: fixed; 
     top: 0; 
     width: 100%;
     z-index: 1000;
-    padding: 5px;
   }
   
   /* Links inside the navbar */
@@ -45,7 +45,7 @@ h1, h2, h3, p, button, li, a{
   
   /* Change background on mouse-over */
   .navbar a:hover {
-    background: #ffffff;
+    background: #abc8e9;
     color: black;
     transition: ease-in 0.15s;
     border-radius: 30px;
@@ -78,7 +78,7 @@ h1, h2, h3, p, button, li, a{
 
 /* about us header section */
 .centre-text {
-  background:#fbcccc;
+  background:#d4e3f4;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -113,7 +113,8 @@ h1, h2, h3, p, button, li, a{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px 30px;
     margin-bottom:50px;
-    border-bottom: 2px  solid #f3bebe;
+    border-bottom: 2px  solid #142f4a;
+
     padding-bottom: 20px; 
     padding-top: 50px;
 }
@@ -167,7 +168,7 @@ h1, h2, h3, p, button, li, a{
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px 30px;
   margin-bottom:50px;
-  border-bottom: 2px  solid #f3bebe;
+  border-bottom: 2px  solid #142f4a;
   padding-bottom: 20px; 
 }
 
@@ -238,7 +239,7 @@ h1, h2, h3, p, button, li, a{
 }
 
 .card-photos {
-  border-bottom: 2rem solid #f3bebe;
+  border-bottom: 2rem solid #142f4a;
   border-radius: 0.5rem 0.5rem 0 0;
   height: auto;
   width: 100%;
@@ -284,12 +285,11 @@ ul {
 
 
 
-/*footer */
 /*start of footer*/
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color:#f3e2e2;
+  background-color:#d4e3f4;
   color: black;
   padding: 20px;
 }
@@ -323,8 +323,8 @@ ul.quick-links {
 .iframe-container {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%; 
-  margin-bottom: 20px; 
+  padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
+  margin-bottom: 20px; /* Add some spacing between the iframe and other content */
 }
 
 /* Responsive iframe */
@@ -342,5 +342,3 @@ ul.quick-links {
     grid-template-columns: 1fr;
   }
 }
-
-
