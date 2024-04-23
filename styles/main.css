@@ -45,7 +45,7 @@
   .navbar a {
     float: left;
     display: block;
-    color:#403d58;
+    color:#142f4a;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -313,10 +313,10 @@ font-size:small;
 }
 
 button:hover {
-        background-color:#abc8e9;
-        color:black;
-        transition: ease-in 0.2s;
-      }
+    background-color:#abc8e9;
+    color:black;
+    transition: ease-in 0.2s;
+}
 
   .card-photos {
     border-bottom: 2rem solid #142f4a;
@@ -340,10 +340,10 @@ ul {
 
 @media screen and (min-width: 768px) {
     .card-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .card {
-        width: 50%;
+        width: 30%;
     }
     img {
         min-height: 15.5rem;
@@ -352,7 +352,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
     .card-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .card {
         width: 33.33%;

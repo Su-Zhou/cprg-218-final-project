@@ -25,55 +25,55 @@ h1, h2, h3, p, button, li, a{
 
 /* nav bar */
 .navbar {
-    overflow: hidden;
-    background-color:#d4e3f4;
-    position: fixed; 
-    top: 0; 
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    display: block;
-    color:#403d58;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #abc8e9;
-    color: black;
-    transition: ease-in 0.15s;
-    border-radius: 30px;
-  }
-    .navbar .icon {
-        display: none;
-  }
+  overflow: hidden;
+  background-color:#081e32;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 1000;
+}
 
-  @media screen and (max-width: 500px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color:#eaf4ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #abc8e9;
+  color: rgb(0, 0, 0);
+  transition: ease-in 0.15s;
+  border-radius: 30px;
+}
+  .navbar .icon {
+      display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
   }
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {position: fixed;}
-    .navbar.responsive a.icon {
-      position: absolute;
-      right: 10px;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+}
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: fixed;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 10px;
+    top: 0;
   }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 /* end of nav bar section */
 
 /* about us header section */
